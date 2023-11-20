@@ -1,3 +1,24 @@
 .carruselContainer {
-    background-color: red;
+    box-shadow: 1px 1px 2px 2px gray;
+    width: 100%;
+    overflow: hidden;
 }
+
+.carruselCard {
+    display: none;
+}
+
+.carruselCardBlock {
+    display: block;
+}
+
+.carruselCard img {
+  width: 20%;
+  height: auto;
+}
+
+.carruselCardBlock img {
+    width: 20%;
+    height: auto;
+  }
+
