@@ -17,6 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <link rel="shortcut icon" href="/modulares-logo.png" type="image/x-icon" />
       <body className={inter.className}>
         <Nav/>
         {children}
