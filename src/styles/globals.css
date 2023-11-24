@@ -8,21 +8,24 @@ body {
 }
 
 nav {
-  background-color: #FCF9F9;
+  background-color: #898121;
   display: flex;
   align-items: center;
   height: 80px;
-  border-bottom: 1px solid gray;
+  border-bottom: 1px solid black;
 }
 
 nav img {
   width: 6%;
   margin: 0px 20px;
+  background-color: white;
+  border-radius: 20%;
 }
 
 nav h1 {
   text-align: end;
   font-family: 'Arimo', sans-serif;
+  color: black;
 }
 
 nav ul {
@@ -36,17 +39,25 @@ nav ul {
 nav a {
   width: 40%;
   background: linear-gradient(to top, #FCF9F9 0, #BCEB3C 0%);
-  background-size: 100% 0;
+  background-size: 0 100%;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  border-left: 1px solid gray;
+  border-left: 1px solid black;
   align-items: center;
-  transition: background-size 0.3s; 
+  transition: background-size 2s; 
   text-decoration: none;
   color: black;
 }
 
 nav a:hover {
   background-size: 100% 100%;
+  color: black;
+  border-left: 1px solid black;
+}
+
+footer {
+  margin-top: 1%;
+  border-top: 1px solid #7CBD1E;
+  background-color: #F1F864;
 }

@@ -1,11 +1,11 @@
-'use client'
 import Prom from '@/components/Prom'
-import { getServerSideProps } from 'next/dist/build/templates/pages'
+import { readdir } from 'fs'
+
 export default function Home() {
-  
   return (
     <>
       <Prom/>
+
     </>
   )
 }
