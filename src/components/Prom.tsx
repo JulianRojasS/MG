@@ -3,18 +3,24 @@
 import CarruselSlide from "./CarruselSlide"
 import styles from "@/styles/page.module.css"
 import { useState } from 'react'
-import { readdir } from "fs"
-import { tree } from "next/dist/build/templates/app-page"
-
 
 export default function Promo() {
     const [slide, setSlide] = useState(0)
     const data = [{src: "/slider/PROM1.jpeg", alt: "Image1", id: "0"}, {src: "/slider/PROM2.jpeg", alt: "Image2", id: "1"}, {src: "/slider/PROM3.jpeg", alt: "Image3", id: "2"}]
 
+    function showSlidePos (i: number) {
+        var pos: any[] = ["-", "-", "-"]
+        pos[i] = <b key={slide} style={{color: "black"}}>-</b>
+        return pos
+    }
+
     function showPos () {
         automove(true)
             return (
-                <CarruselSlide prop={{src: data[slide].src, alt: data[slide].alt, id: data[slide].id}} key={data[slide].id}/>
+                <div style={{ display:"flex", flexDirection: "column", textAlign: 'center', justifyContent: "center"}}>
+                    <CarruselSlide prop={{src: data[slide].src, alt: data[slide].alt, id: data[slide].id}} key={slide}/>
+                    <p style={{fontSize: "25px", color: "gray"}}>{showSlidePos(slide)}</p>
+                </div>
             )
     }
 
@@ -45,9 +51,9 @@ export default function Promo() {
     }
 
     return (
-        <section key={1}>
-            <h2 style={{textAlign: "center", marginTop: "10px"}} >Promosiones de la semana</h2>
-            <div key={1} className={styles.carruselContainer}>
+        <section>
+            <h2 style={{textAlign: "center", margin: "20px 0"}} >Promosiones de la semana</h2>
+            <div className={styles.carruselContainer}>
                 <button className={styles.carruselButton} onClick={back}>{"<"}</button>
                 {
                     showPos()
