@@ -1,4 +1,3 @@
-import TexCard from "@/components/TextCard"
 import Link from "next/link"
 import styles from "@/styles/page.module.css"
 

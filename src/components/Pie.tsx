@@ -1,6 +1,9 @@
+import styles from '@/styles/page.module.css'
+
 export default function Pie() {
     return (
-        <footer>            
+        <div className={styles.footerContenedor}>
+            <footer>            
             <section>
                 <ul>
                     <li>FABRICA. Cra 22 # 7-47sur, Madrid, Colombia</li>
@@ -15,5 +18,6 @@ export default function Pie() {
                 </a>
             </div>
         </footer>
+        </div>
     )
 }
