@@ -69,10 +69,8 @@ nav a:hover {
 }
 
 footer {
-  margin-top: 1%;
   border-top: 1px solid #7CBD1E;
   background-color: white;
-  height: 110px;
   display: flex;
   align-items: center;
   justify-content: space-between;

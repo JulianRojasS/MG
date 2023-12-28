@@ -7,13 +7,13 @@ export default function Home() {
     <>
       <Prom/>
       <div style={{display: 'flex', justifyContent: 'space-around', flexWrap:'wrap'}}>
-                <TexCard props={{link: "./", tittle: 'Bienvenido', paragraph: 'Con nosotros encontraras solucion a todas tus necesidades en carpinteria arquitectonica, cocinas, muebles de baño, closets, vestier y mucho mas. Comunicate, te asesoramos y guiamos en el proceso.', button: 'Here'}}/>
-                <TexCard props={{link: "./", tittle: 'Bienvenido', paragraph: 'Con nosotros encontraras solucion a todas tus necesidades en carpinteria arquitectonica, cocinas, muebles de baño, closets, vestier y mucho mas. Comunicate, te asesoramos y guiamos en el proceso.', button: 'Here'}}/>
-                <TexCard props={{link: "./Portafolio", tittle: 'Portafolio', paragraph: 'Nuestra experiencia nos permite ofrecerte una gran variedad de productos y soluciones a tus necesidades.', button: 'Ir'}}/>
+                <TexCard link={ "./"} tittle= {'Bienvenido'} paragraph={'Con nosotros encontraras solucion a todas tus necesidades en carpinteria arquitectonica, cocinas, muebles de baño, closets, vestier y mucho mas. Comunicate, te asesoramos y guiamos en el proceso.'} button={'Here'}/>
+                <TexCard link={ "./"} tittle= {'Bienvenido'} paragraph={'Con nosotros encontraras solucion a todas tus necesidades en carpinteria arquitectonica, cocinas, muebles de baño, closets, vestier y mucho mas. Comunicate, te asesoramos y guiamos en el proceso.'} button={'Here'}/>
+                <TexCard link={ "./Pprtafolio"} tittle={'Portafolio'} paragraph={'Nuestra experiencia nos permite ofrecerte una gran variedad de productos y soluciones a tus necesidades.'} button={'Ir'} />
                 <div className={styles.textCard} style={{border: 0}}>
                     <img src="/slider/PROM9.jpeg" alt="none" />
                 </div>
-                <TexCard props={{link: "./", tittle: 'Que nos hace diferentes', paragraph: 'Nuestro valor agregado se genera solucionando tus requerimientos en mobiliario y carpintería atravez de propuestas en diseño. Ajustamos todo a tu necesidad contemplando espacios, funcionalidad, materiales y sobretodo tu presupuesto para llegar a tu hogar de forma amigable y ser parte importante en los diferentes ambientes y emociones para tu familia.', button: 'Here'}}/>
+                <TexCard link={ "./"} tittle= {'Que nos hace diferentes'} paragraph={'Nuestro valor agregado se genera solucionando tus requerimientos en mobiliario y carpintería atravez de propuestas en diseño. Ajustamos todo a tu necesidad contemplando espacios, funcionalidad, materiales y sobretodo tu presupuesto para llegar a tu hogar de forma amigable y ser parte importante en los diferentes ambientes y emociones para tu familia.'} button={'Here'}/>
                 <div className={styles.textCard} style={{border: 0}}>
                     <img src="/slider/PROM1.jpeg" alt="none" />
                 </div>
