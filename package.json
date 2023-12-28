@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "fs": "^0.0.1-security",
+    "mysql2": "^3.6.5",
     "next": "^14.0.3",
     "react": "^18",
     "react-dom": "^18"

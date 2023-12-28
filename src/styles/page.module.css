@@ -105,3 +105,79 @@
 .footerContenedor {
   background-color: red;
 }
+
+
+.ProdCard {
+  background-color: white;
+  border: 1px #7cbd1e solid;
+  margin: 2% 2%;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.ProdCard img {
+  width: 300px;
+  height: 200px;
+  padding: 20px 20px 0px 20px;
+}
+
+.ProdCard span p {
+  margin: 5px 0 10px 20px;
+  font-size: 12px;
+  text-align: start;
+}
+
+.ProdCard p {
+  margin: 5px 0;
+}
+
+.ProdCard button {
+  margin: 10px 0;
+  border-radius: 2px;
+  border: 1px solid;
+  padding: 10px 50px;
+}
+
+.ProductContenedor {
+  margin: auto;
+  width: 90%;
+}
+
+.ProductContenedor h2 {
+  margin: 30px 0 0.5% 0;
+}
+
+.ProductContenedor h2 a {
+  color: #7cbd1e;
+}
+
+.ProductContenedor h2 a:hover {
+  text-decoration: underline;
+}
+
+.Modal {
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background-color: rgba(0, 0, 0, 0.5); /* Opacidad solo para el fondo */
+}
+
+.Modal section {
+  text-align: center;
+  background-color: #fefefe;
+  margin: 10% auto;
+  width: 50%;
+  height: 300px;
+  opacity: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.Modal section button {
+  padding: 10px;
+  background-color: red;
+  align-self: flex-end;
+}
