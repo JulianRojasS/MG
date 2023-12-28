@@ -15,7 +15,6 @@ export default function Promo() {
     }
 
     function showPos () {
-        automove(true)
             return (
                 <div style={{ display:"flex", flexDirection: "column", textAlign: 'center', justifyContent: "center"}}>
                     <CarruselSlide prop={{src: data[slide].src, alt: data[slide].alt, id: data[slide].id}} key={slide}/>
@@ -24,31 +23,23 @@ export default function Promo() {
             )
     }
 
-    function automove (set: boolean) {
-            if (set) {
-                setTimeout(advance, 5000)
-            }
-    }
-
     const advance = () => {
         if (slide == data.length-1) {
-            automove(false)
             setSlide(0)
         } else if (slide <= data.length-1) {
-            automove(false)
             setSlide(slide+1)
         }
     }
     
     const back = () => {
         if (slide == 0) {
-            automove(false)
             setSlide(data.length-1)
         } else if (slide >= 0) {
-            automove(false)
             setSlide(slide-1)
         }
     }
+
+    setTimeout(advance, 5000)
 
     return (
         <section>

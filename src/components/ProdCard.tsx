@@ -1,6 +1,6 @@
 'use client'
 import styles from '@/styles/page.module.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export default function ProdCard({id, img, name, category, price}:{id:string, img:string, category:string, name: string, price:string}) {
     const [display, setDisplay] = useState("none")
@@ -8,21 +8,37 @@ export default function ProdCard({id, img, name, category, price}:{id:string, im
         display: display
     }
 
+    const handleEscKeyPess = (e: KeyboardEvent) => {
+        if (e.key == "Escape") {
+            close()
+        }
+    }
+
+    useEffect(() => {
+        document.addEventListener("keydown", handleEscKeyPess)
+        return () => {
+            document.removeEventListener("keydown", handleEscKeyPess)
+        }
+    },[])
+
     function show () {
         setDisplay("block")
+        document.body.style.overflow = "hidden"
     }
 
     function close () {
         setDisplay("none")
+        document.body.style.overflow = "auto"
     }
 
     return (
         <>
-            <div id={id} onClick={(e) => {
+            <div className={styles.Modal} style={stilos}>
+                <span id={id} onClick={(e) => {
                 if (e.target.id == id) {
                     close()
                 }
-            }} className={styles.Modal} style={stilos}>
+            }}></span>
                 <section>
                     <button onClick={close} >x</button>
                     <h2>{name}</h2>
